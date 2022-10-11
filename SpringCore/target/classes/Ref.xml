@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class=" com.SpringCore.ref.School" name="School1" p:Series="32"/>
+		<!-- <property name="Series" value="78" /> -->
+	
+
+	<bean class="com.SpringCore.ref.College" name="clg" p:Rollno="45" p:obj-ref="School1">
+		<!--  <property name="Rollno" value="01" />
+		<property name="obj">
+			<ref bean="School1" />
+		</property> 
+		
+		Another way to write reference tag
+		
+		<property name="obj" ref="School1"/> -->
+
+
+
+	</bean>
+
+</beans>

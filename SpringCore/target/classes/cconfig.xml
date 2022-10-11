@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="Emp" class="com.SpringgCore.Collections.Employees">
+	
+	<property name="Name" value="Anurag" />
+	
+	<property name="PhoneNmbers">
+	<list>
+	<value>7680656742</value>
+	<value>9680456734</value>
+	<value>3456723456</value>
+	<value>8889765467</value>
+	<value>6378965345</value>
+	</list>
+	</property>
+	
+	<property name="Address">
+	<set>
+	<value>Ghaziabad</value>
+	<value>Nagpur</value>
+	<value>Agra</value>
+	<value>Chowesa</value>
+	<value>Patna</value>
+	</set>
+	</property>
+	
+	<property name="Courses">
+	<map>
+	<entry key="Java" value="6-Months" />
+	<entry key="Python" value="4-Months" />
+	<entry key="Djano" value="3-Months" />
+	<entry key="Data Science" value="2-Months" />
+	<entry key="Php" value="1-Months" />
+	</map>
+	</property>
+	
+	</bean>
+		
+		
+
+</beans>
